@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Đọc Truyện</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .dashboard-container { max-width: 600px; margin: 0 auto; padding: 20px; color: white; }
+        .story-card { background: #444; padding: 15px; margin-bottom: 15px; border-radius: 8px; }
+        .story-card h2 { margin-bottom: 10px; font-size: 20px; }
+        .read-btn { display: inline-block; background: #007bff; color: white; text-decoration: none; padding: 8px 15px; border-radius: 5px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>📚 Thư Viện Của Tôi</h1>
+        <div id="story-list">
+            <!-- Danh sách truyện sẽ được load vào đây -->
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>

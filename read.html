@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đọc Truyện PDF</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+    <div id="app-container">
+        <!-- Chứa các trang PDF -->
+        <div id="pdf-container"></div>
+        
+        <!-- Nút chuyển Chunk (Cụm 20 trang) -->
+        <div class="chunk-controls" id="chunk-controls" style="display: none;">
+            <button id="prev-chunk-btn">20 Trang trước</button>
+            <button id="next-chunk-btn">20 Trang tiếp</button>
+        </div>
+    </div>
+
+    <!-- Thanh điều hướng nổi -->
+    <div id="floating-nav">
+        <button id="btn-top" title="Lên đầu">Head</button>
+        <div class="jump-container">
+            <input type="number" id="page-input" placeholder="Trang..." min="1">
+            <button id="btn-jump">Đi</button>
+        </div>
+        <button id="btn-bottom" title="Xuống cuối">Leg</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
